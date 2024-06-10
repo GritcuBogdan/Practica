@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="rootAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1074.0" prefWidth="1854.0" style="-fx-background-radius: 10;" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <AnchorPane layoutX="-12.0" layoutY="-16.0" prefHeight="1094.0" prefWidth="1870.0" style="-fx-background-color: #0F4C75; -fx-background-radius: 10;">
+            <children>
+                <BorderPane layoutX="12.0" layoutY="-16.0" prefHeight="1110.0" prefWidth="1862.0">
+                    <left>
+                        <VBox prefHeight="1080.0" prefWidth="318.0" style="-fx-background-color: #59a5d8; -fx-border-color: #003249; -fx-border-width: 0 4 0 0;" BorderPane.alignment="CENTER">
+                            <children>
+                                <Button alignment="BASELINE_LEFT" graphicTextGap="20.0" mnemonicParsing="false" prefHeight="92.0" prefWidth="318.0" style="-fx-background-color: #5094c2;" text="Home" textFill="WHITE">
+                                    <graphic>
+                                        <ImageView fitHeight="54.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <!--                                                <Image url="home__1_-removebg-preview.png" />-->
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                    <padding>
+                                        <Insets left="60.0" />
+                                    </padding>
+                                </Button>
+                                <Button alignment="BASELINE_LEFT" graphicTextGap="20.0" mnemonicParsing="false" prefHeight="92.0" prefWidth="318.0" style="-fx-background-color: #5094c2;" text="Settings" textFill="WHITE">
+                                    <graphic>
+                                        <ImageView fitHeight="64.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <!--                                                <Image url="@/images/settings-removebg-preview.png" />-->
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                    <padding>
+                                        <Insets left="52.0" />
+                                    </padding>
+                                </Button>
+                                <Button alignment="BASELINE_LEFT" graphicTextGap="20.0" mnemonicParsing="false" prefHeight="92.0" prefWidth="318.0" style="-fx-background-color: #5094c2;" text="About" textFill="WHITE">
+                                    <graphic>
+                                        <ImageView fitHeight="64.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <!--                                                <Image url="@/images/info-removebg-preview.png" />-->
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                    <padding>
+                                        <Insets left="52.0" />
+                                    </padding>
+                                </Button>
+                            </children>
+                        </VBox>
+                    </left>
+                    <top>
+                        <HBox prefHeight="138.0" prefWidth="1862.0" style="-fx-background-color: #0F4C75; -fx-border-color: #003249; -fx-border-width: 0 0 4 0;" BorderPane.alignment="CENTER">
+                            <children>
+                                <ImageView fitHeight="136.0" fitWidth="234.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <!--                                        <Image url="@/images/HRManager-removebg-preview.png" />-->
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets left="20.0" top="24.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                            </children></HBox>
+                    </top>
+                    <center>
+                        <BorderPane prefHeight="838.0" prefWidth="1644.0" style="-fx-background-color: #e3f2fd;" BorderPane.alignment="CENTER">
+                            <top>
+                                <HBox prefHeight="80.0" prefWidth="1644.0" style="-fx-background-color: #5094c2;" BorderPane.alignment="CENTER">
+                                    <children>
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" />
+                                        <Text fill="WHITE" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="1.0" text="Lista angajaților curenți:">
+                                            <font>
+                                                <Font name="Tahoma Bold" size="40.0" />
+                                            </font>
+                                            <HBox.margin>
+                                                <Insets left="20.0" top="100.0" />
+                                            </HBox.margin>
+                                        </Text>
+                                        <ImageView fitHeight="64.0" fitWidth="88.0"  pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <!--                                                <Image url="@/images/add-removebg-preview.png" />-->
+                                            </image>
+                                            <HBox.margin>
+                                                <Insets left="280.0" top="40.0" />
+                                            </HBox.margin>
+                                        </ImageView>
+                                        <ImageView fitHeight="64.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <!--                                                <Image url="@/images/update-removebg-preview.png" />-->
+                                            </image>
+                                            <HBox.margin>
+                                                <Insets left="80.0" top="40.0" />
+                                            </HBox.margin>
+                                        </ImageView>
+                                        <ImageView fitHeight="64.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <!--                                                <Image url="@/images/delete-removebg-preview.png" />-->
+                                            </image>
+                                            <HBox.margin>
+                                                <Insets left="80.0" top="40.0" />
+                                            </HBox.margin>
+                                        </ImageView>
+                                    </children>
+                                </HBox>
+                            </top>
+                            <left>
+                                <TableView prefHeight="800.0" prefWidth="1654.0" BorderPane.alignment="CENTER">
+                                    <columns>
+                                        <TableColumn prefWidth="188.0" text="Nume" />
+                                        <TableColumn prefWidth="188.0" text="Prenume" />
+                                        <TableColumn prefWidth="188.0" text="IDNP" />
+                                        <TableColumn prefWidth="188.0" text="Adresa" />
+                                        <TableColumn prefWidth="188.0" text="Telefon" />
+                                        <TableColumn prefWidth="188.0" text="Companie" />
+                                        <TableColumn prefWidth="188.0" text="Functie" />
+                                        <TableColumn prefWidth="252.0" text="Subdiviziune" />
+                                    </columns>
+                                </TableView>
+                            </left>
+                        </BorderPane>
+                    </center>
+                </BorderPane>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
