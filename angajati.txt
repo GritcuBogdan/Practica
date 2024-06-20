@@ -1,2 +1,1 @@
-Nume: Gritcu, Prenume: Bogdan, IDNP: 1241242155, Adresa: Str.Cuza-Voda 18, Telefon: 068984778, Functie: svarshik, Companie: Goagle, Subdiviziune: 101
-Nume: Bonca, Prenume: Ion, IDNP: 1241255235323, Adresa: Str.Melestiu 69, Telefon: 562141241, Functie: Senior Java Developer, Companie: Endava, Subdiviziune: 101
+Prisacaru;Savel;1432142411222;Str.Alba-Iulia 23;068413234;C++ developer;Endava;201

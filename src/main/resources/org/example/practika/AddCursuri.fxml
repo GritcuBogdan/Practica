@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: #3282B8;" xmlns="http://javafx.com/javafx/20.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.practika.DepartamentHR.Controller.DepartamentHR">
+    <children>
+        <AnchorPane prefHeight="807.0" prefWidth="200.0" style="-fx-background-color: #0F4C75;">
+            <children>
+                <ImageView fx:id="homeButton" fitHeight="150.0" fitWidth="200.0" layoutX="25.0" layoutY="7.0" onMouseClicked="#backToHome" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@img/whiteHaus-removebg-preview.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="181.0" fitWidth="225.0" layoutY="626.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@img/HRManager-removebg-preview.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+        <Label layoutX="479.0" layoutY="21.0" text="Posturi vacante" textFill="WHITE">
+            <font>
+                <Font size="36.0" />
+            </font>
+        </Label>
+        <RadioButton fx:id="englezaButton" layoutX="232.0" layoutY="153.0" mnemonicParsing="false" text="Java developer" textFill="WHITE">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </RadioButton>
+        <RadioButton fx:id="programareButton" layoutX="232.0" layoutY="400.0" mnemonicParsing="false" text="HR Manager" textFill="WHITE">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </RadioButton>
+        <RadioButton fx:id="hrButton" layoutX="232.0" layoutY="649.0" mnemonicParsing="false" text="Paznic" textFill="WHITE">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </RadioButton>
+        <AnchorPane fx:id="englezaAnchorPane" layoutX="417.0" layoutY="83.0" prefHeight="200.0" prefWidth="779.0" style="-fx-background-color: #0F4C75; -fx-background-radius: 50;">
+            <children>
+                <Label layoutX="60.0" layoutY="51.0" text="Nume" textFill="WHITE">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="numeTextfield" layoutX="12.0" layoutY="100.0" />
+                <Label layoutX="253.0" layoutY="51.0" text="Prenume" textFill="WHITE">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="prenumeTextfield" layoutX="208.0" layoutY="100.0" />
+                <Label layoutX="442.0" layoutY="51.0" text="IDNP" textFill="WHITE">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="idnpTextField" layoutX="394.0" layoutY="100.0" />
+                <Button fx:id="chooseFile1" layoutX="564.0" layoutY="100.0" mnemonicParsing="false" onAction="#chooseFile" text="Alege fișier" />
+                <Button fx:id="submit" layoutX="672.0" layoutY="100.0" mnemonicParsing="false" onAction="#submitForm" text="Submit" />
+            <Label layoutX="584.0" layoutY="51.0" text="CV" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="programareAnchorPane" layoutX="425.0" layoutY="324.0" prefHeight="200.0" prefWidth="764.0" style="-fx-background-color: #0F4C75; -fx-background-radius: 50;">
+            <children>
+                <Label layoutX="60.0" layoutY="51.0" text="Nume" textFill="WHITE">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="numeTextfield2" layoutX="12.0" layoutY="100.0" />
+                <Label layoutX="255.0" layoutY="51.0" text="Prenume" textFill="WHITE">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="prenumeTextfield2" layoutX="210.0" layoutY="100.0" />
+                <Label layoutX="442.0" layoutY="51.0" text="IDNP" textFill="WHITE">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="idnpTextfield2" layoutX="394.0" layoutY="100.0" />
+                <Button fx:id="chooseFile2" layoutX="564.0" layoutY="100.0" mnemonicParsing="false" onAction="#chooseFile" text="Alege fișier" />
+                <Button fx:id="submit2" layoutX="679.0" layoutY="100.0" mnemonicParsing="false" onAction="#submitForm" text="Submit" />
+            <Label layoutX="596.0" layoutY="53.0" text="CV" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="hrAnchorPane" layoutX="425.0" layoutY="564.0" prefHeight="200.0" prefWidth="764.0" style="-fx-background-color: #0F4C75; -fx-background-radius: 50;">
+            <children>
+                <Label layoutX="60.0" layoutY="51.0" text="Nume" textFill="WHITE">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="numeTextfield3" layoutX="12.0" layoutY="100.0" />
+                <Label layoutX="255.0" layoutY="51.0" text="Prenume" textFill="WHITE">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="prenumeTextfield3" layoutX="210.0" layoutY="100.0" />
+                <Label layoutX="442.0" layoutY="51.0" text="IDNP" textFill="WHITE">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="idnpTextfield3" layoutX="394.0" layoutY="100.0" />
+                <Button fx:id="chooseFile3" layoutX="569.0" layoutY="100.0" mnemonicParsing="false" onAction="#chooseFile" text="Alege fișier" />
+                <Button fx:id="submit3" layoutX="685.0" layoutY="100.0" mnemonicParsing="false" onAction="#submitForm" text="Submit" />
+            <Label layoutX="598.0" layoutY="49.0" text="CV" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

@@ -9,10 +9,10 @@ import javafx.scene.input.KeyEvent;
 import java.util.function.UnaryOperator;
 
 public interface Controller {
-    int getMaxTextFieldLength();
+    int getMaxTextFieldLength(TextField textField);
 
     default void limitTextFieldLength(TextField textField, KeyEvent keyEvent){
-        int maxLength = getMaxTextFieldLength();
+        int maxLength = getMaxTextFieldLength(textField);
         if(textField.getText().length() >= maxLength){
             keyEvent.consume();
         }
@@ -21,7 +21,7 @@ public interface Controller {
     void limitTextFieldLength(KeyEvent event);
 
 
-    UnaryOperator<TextFormatter.Change> forceDigitsOnly();
+   void forceDigitsOnly(TextField textField);
 
 
 
